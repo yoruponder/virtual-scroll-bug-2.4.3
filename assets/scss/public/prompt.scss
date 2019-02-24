@@ -1,0 +1,34 @@
+@import '_SCSS_/public/baseVal.scss';
+.hk-prompt{
+  width: 450px;
+  height: 260px;
+  margin: 72px auto;
+  border-radius: $comradius;
+  border: $comborder;
+  background: #fff;
+  h3{
+    font-size: $mfs;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-weight: normal;
+    background: $lgray;
+  }
+  .cnt{
+    padding-top: 45px;
+    text-align: center;
+    h4{
+      color: $orange;
+      font-size: $b1fs;
+      font-weight: normal;
+    }
+    .line{
+      font-size: $nfs;
+      color: $fc3;
+      margin: 30px 0 25px;
+    }
+    .link{
+      color: $blue;
+    }
+  }
+}

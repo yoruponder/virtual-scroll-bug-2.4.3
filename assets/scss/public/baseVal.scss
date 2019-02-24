@@ -1,0 +1,91 @@
+$comborder: .01rem solid #e5e5e5;
+$comlh: 1.428;
+$n0fs: .2rem; //正常字號
+$nfs: .22rem;	//中
+$mfs: .24rem;	//大
+$bfs: .26rem;	//大
+$b1fs: .28rem;	//大
+$mxfs: .3rem;	//大
+
+$fc0: #000; //黑色
+$fc1: #333; //字體深色
+$fc2: #666; //中等色
+$fc3: #999; //淺色
+$afc: #1882ef; //a标签颜色
+$facebook: #3c5b99;
+
+$orange: #f60;
+$orange2: #ff4e00;
+
+$green: #14ae73;
+$red: #fe2828;
+$yellow: #ffaf3c;
+$dyellow: #b18540;
+$blue: #27a3f3;
+
+$borderColor: #e5e5e5; //邊框
+$llgray: #fbfbfb; //最淺灰
+$lgray: #f6f6f6; //浅灰 底色
+$lgray2: #ededed; //浅灰2
+$mgray2: #dadada; //中灰2 不可點擊
+$mgray: #cecece; //中灰 邊框hover
+$mgray3: #b6b6b6;
+$dgray: #757575; //深灰
+$comradius: .08rem;
+$comshadow: 0 .02rem .02rem rgba(0,0,0,.1); //统一阴影
+
+//zindex
+$zidx_com_tabBar: 8; //底部tab欄
+$zidx_idx_head: 100; //頭部最頂部
+$zidx_error: 101; //錯誤頁面
+
+$zidx_list_head: 15; //商品列表 头部
+$zidx_list_head_sd: 13;//商品列表 遮罩
+$zidx_list_search: 20;//商品列表 遮罩
+
+$zidx_order_detail_foot: 20; //訂單詳情底部
+$zidx_downlist: 60; //下拉菜單
+$zidx_load: 60; //加載中
+$zidx_im: 30; //即時通訊
+$zidx_im_sd: 29; //即時通訊遮罩
+
+@mixin input { //模擬input樣式
+  width: 100%;
+  height: 100%;
+  border: $comborder;
+  color: $fc1;
+  padding: .2rem;
+  outline: none;
+  vertical-align: top;
+  border-radius: $comradius;
+  font-size: $bfs;
+  background: #fff;
+  &:hover{
+    border-color:$mgray;
+  }
+  &:focus{
+    border-color: $orange;
+  }
+  &::-webkit-input-placeholder{
+    color: $mgray3;
+  }
+  &:disabled{
+    background: $borderColor;
+    color: $fc3;
+  }
+}
+@mixin downArr { //向下小箭頭
+  position: absolute;
+  display:block;
+  content: '';
+  border: 5px solid transparent;
+  border-top-color: $fc1;
+}
+@mixin newAtag {
+  a{
+    color: $fc1;
+    &:hover{
+      color: $orange;
+    }
+  }
+}

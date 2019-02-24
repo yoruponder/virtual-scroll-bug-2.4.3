@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-1.4.5-boilerplate",
+  "scripts": {
+    "dev": "NODE_ENV=dev PORT=8081 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.4.3",
+    "vant": "^1.6.6",
+    "vue-virtual-scroll-list": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.2",
+    "postcss-adaptive-exclude": "^0.5.1",
+    "sass-loader": "^7.0.3"
+  }
+}

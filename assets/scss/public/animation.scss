@@ -1,0 +1,11 @@
+@keyframes roll {
+  100% { transform: rotateZ(360deg); }
+}
+@keyframes toUp {
+  50% { transform: translateY(-10px); }
+  0%, 100% { transform: translateY(0); }
+}
+@keyframes toRight {
+  50% { transform: translateX(-10px); }
+  0%, 100% { transform: translateX(0); }
+}
